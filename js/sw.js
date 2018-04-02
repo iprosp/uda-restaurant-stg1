@@ -1,4 +1,4 @@
-restaurantsCache = 'restaurants-v1';
+restaurantsCache = 'restaurants-v2';
 
 self.addEventListener('install', function(event) {
   event.waitUntil(
@@ -8,6 +8,16 @@ self.addEventListener('install', function(event) {
         '/favicon.ico',
         '/index.html',
         '/restaurant.html',
+        '/restaurant.html?id=1',
+        '/restaurant.html?id=2',
+        '/restaurant.html?id=3',
+        '/restaurant.html?id=4',
+        '/restaurant.html?id=5',
+        '/restaurant.html?id=6',
+        '/restaurant.html?id=7',
+        '/restaurant.html?id=8',
+        '/restaurant.html?id=9',
+        '/restaurant.html?id=10',
         '/css/styles.css',
         '/data/restaurants.json',
         '/img/1.jpg',
@@ -22,8 +32,9 @@ self.addEventListener('install', function(event) {
         '/img/10.jpg',
         '/js/main.js',
         '/js/dbhelper.js',
-        '/js/restaurant_info.js' 
+        '/js/restaurant_info.js'
       ];
+      
       return cache.addAll(sources);
     })
   );
