@@ -34,7 +34,6 @@ self.addEventListener('install', function(event) {
         '/js/dbhelper.js',
         '/js/restaurant_info.js'
       ];
-      
       return cache.addAll(sources);
     })
   );
