@@ -152,6 +152,9 @@ class DBHelper {
   static imageUrlForRestaurant(restaurant) {
     return (`/img/${restaurant.photograph}`);
   }
+  static imageSrcSetForRestaurant(restaurant) {  
+    return (`/img/w270/${restaurant.photograph} 270w, /img/w540/${restaurant.photograph} 540w, /img/${restaurant.photograph} 800w`);
+  }
 
   /**
    * Map marker for a restaurant.
