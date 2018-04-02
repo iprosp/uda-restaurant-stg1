@@ -182,13 +182,5 @@ addMarkersToMap = (restaurants = self.restaurants) => {
 }
 
 //Register the service worker
-IndexController.prototype._registerServiceWorker = function() {
-  if (!navigator.serviceWorker) return;
-  
-  navigator.serviceWorker.register('/js/sw.js').then(function() {
-    console.log('Registration worked!');
-  }).catch(function() {
-    console.log('Registration failed!');
-  });
-};
-
+//https://developer.mozilla.org/en-US/docs/Web/API/Navigator/serviceWorker
+//https://classroom.udacity.com/nanodegrees/nd024/parts/0bf842e9-7269-42de-b68b-812ca7823517/modules/83c4bddc-b362-4e71-8fa1-91f30ba57ab0/lessons/6381510081/concepts/63885494270923
