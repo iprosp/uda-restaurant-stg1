@@ -33,18 +33,9 @@
       <ul id="restaurants-list"></ul>
     </section>
   </main>
-  <!-- Service worker registration -->
-  <script>
-    if ('serviceWorker' in navigator) {
-     navigator.serviceWorker.register('/js/sw.js').then(function() {
-       console.log('Registration worked!');
-     }).catch(function() {
-       console.log('Registration failed!');
-     });
-    }
-  </script>
 
-  <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
+  <script type="application/javascript" char
+set="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAbLvvrt6KH3C3h-oOOjEwYawlCgT-XnjI&libraries=places&callback=initMap"></script>
 
